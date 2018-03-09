@@ -77,6 +77,7 @@ exports.handler = function (event, context, callback) {
 				"Body": data,
 				"Bucket": "s3.thumb.output",
 				"Key": dstKey,
+				"ACL": "public-read",
 				ContentType: contentType
 			},
 				next);
